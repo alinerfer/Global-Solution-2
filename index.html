@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Feira Viva – Orgânicos e Sustentabilidade</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #F5F5F5;
+            color: #333333;
+        }
+
+        header {
+            background-color: #8FCBFF;
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        .feira-img img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        #toggleInfo {
+            cursor: pointer;
+            color: #4CAF50;
+            text-decoration: underline;
+        }
+
+        #infoExtra {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 class="display-5">Feira Viva</h1>
+            <p class="lead">Alimentação saudável e práticas sustentáveis no coração da cidade.</p>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <section>
+            <h2 class="mb-3">Sobre a Feira</h2>
+            <p>A Feira Viva é um espaço ao ar livre que acontece todos os sábados no Parque das Árvores. Ela reúne
+                pequenos produtores de orgânicos, empreendedores locais e atividades voltadas à sustentabilidade urbana.
+            </p>
+            <div class="feira-img mt-3">
+                <img src="./assets/images/pexels-dayane-nascimento-1593239528-30860319.jpg"
+                    alt="Imagem ilustrativa da feira orgânica" />
+            </div>
+        </section>
+
+        <section class="mt-5">
+            <h2 class="mb-3">O que você encontra</h2>
+            <ul class="list-group">
+                <li class="list-group-item">🥬 Hortaliças e frutas orgânicas fresquinhas.</li>
+                <li class="list-group-item">☕ Café artesanal e pães de fermentação natural.</li>
+                <li class="list-group-item">🎨 Artesanato feito com materiais recicláveis.</li>
+                <li class="list-group-item">🌻 Oficinas gratuitas sobre compostagem e hortas urbanas.</li>
+                <li class="list-group-item">🧘 Aulas abertas de ioga e meditação.</li>
+            </ul>
+        </section>
+
+        <section class="mt-5">
+            <h2 class="mb-3">Informações Adicionais</h2>
+            <p id="toggleInfo">Clique aqui para saber mais sobre a localização e acessibilidade</p>
+            <div id="infoExtra" class="mt-3">
+                <p>A feira acontece todos os sábados das 7h às 14h, no Parque das Árvores, próximo à estação Saúde do
+                    metrô.</p>
+                <p>O espaço é acessível para cadeirantes, conta com banheiros adaptados e trilha pavimentada.</p>
+            </div>
+
+            <h2 class="mt-5 mb-3">Depoimentos</h2>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <p>"Fazer compras aqui virou meu ritual de bem-estar aos sábados. Produtos incríveis e ambiente
+                            acolhedor!"</p>
+                        <footer class="blockquote-footer">Joana F., nutricionista</footer>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <p>"Minha filha aprendeu a plantar hortaliças na oficina infantil. É uma feira que ensina e
+                            inspira."</p>
+                        <footer class="blockquote-footer">Marcos D., pai e educador</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-5">
+            <h2 class="mb-3">Envie sua sugestão</h2>
+            <p>Quer sugerir uma atividade, expositores ou dar sua opinião? Preencha o formulário abaixo:</p>
+            <form id="formSugestao" class="mt-4">
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Seu nome" required />
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="email" placeholder="Seu e-mail" required />
+                </div>
+                <div class="mb-3">
+                    <label for="sugestao" class="form-label">Mensagem</label>
+                    <textarea class="form-control" id="sugestao" rows="4" placeholder="Sua sugestão ou comentário"
+                        required></textarea>
+                </div>
+                <button type="submit" class="btn btn-success">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
